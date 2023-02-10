@@ -18,57 +18,63 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header-nav">
-        <nav class="header-nav">
-          <a class="logo link" href="index.html"
+      <div class="header-container">
+        <div class="header-container-left">
+          <a class="logo" href="index.html"
             >Web<span class="studio-top">Studio</span></a
           >
-          <ul class="header-nav-list list">
-            <li class="header-nav-item">
-              <a class="header-nav-link link active" href="index.html"
-                >Agencja</a
+          <nav class="">
+            <ul class="header-nav">
+              <li class="">
+                <a class="link" href="index.html"
+                  >Agencja</a
+                >
+              </li>
+              <li class="">
+                <a class="link" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="">
+                <a class="link" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-container-right">
+          <ul class="header-contact">
+            <li class="">
+              <a class="link" href="mailto:info@devstudio.com"
+                ><svg class="contact-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope-1"></use>
+                </svg>
+                info@devstudio</a
               >
             </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link link" href="portfolio.html"
-                >Portfolio</a
+            <li class="">
+              <a class="link" href="tel:+48111111111"
+                ><svg class="contact-icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +48 111 111 111</a
               >
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link link" href="kontakt.html">Kontakt</a>
             </li>
           </ul>
-        </nav>
-        <ul class="header-contact-list list">
-          <li class="header-contact-item">
-            <a class="header-contact-link link" href="mailto:info@devstudio.com"
-              ><svg class="contact-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope-1"></use>
-              </svg>
-              info@devstudio</a
-            >
-          </li>
-          <li class="header-contact-item">
-            <a class="header-contact-link link" href="tel:+48111111111"
-              ><svg class="contact-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +48 111 111 111</a
-            >
-          </li>
-        </ul>
-      </div>
+        </div>
+      </div>  
     </header>
     <main>
       <!-- Orders -->
-      <div class="container-orders">
-      <section class="orders">
-          <h1 class="order-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="modal-btn" type="button" data-modal-open>
-            Zamów usługę
-          </button>
+      
+        <section class="orders">
+          <div class="orders-container">
+            <h1 class="order-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+            <button class="modal-btn" type="button" data-modal-open>
+              Zamów usługę
+            </button>
+          </div>
         </section>
-        </div>
+     
       <!-- Feature -->
       <section class="feature-menu">
         <div class="container">
@@ -402,7 +408,7 @@
           <address class="footer-contact">
             <ul class="footer-contact-list">
               <li class="footer-contact-item adress">
-                m. Warszawa, Aleje Jerozolimskie 21
+            m. Warszawa, Aleje Jerozolimskie 21
               </li>
               <li class="footer-contact-item">
                 <a
@@ -486,7 +492,7 @@
         <form class="modal-form">
           <label class="modal-label" for="name">Imię</label>
           <div class="modal-form-textspace-title">
-            <input class="modal-form-input" type="name" name="username" />
+            <input class="modal-form-input" type="username" name="username" />
             <svg class="modal-icon">
               <use href="./images/icons.svg#icon-person-form-18dp"></use>
             </svg>
@@ -513,14 +519,35 @@
               placeholder="Wprowadź tekst"
             ></textarea>
           </div>
-          <input class="modal-form-policy visually-hidden" id="user-policy" type="checkbox">
-          <label class="modal-form-policy-text" for="user-policy">Oświadczam, iż akceptuję
-             <a href="#"
-            class="modal_form-regulations-link">Regulamin</a>
-            i <a href="#" class="modal_form-regulations-link">Politykę Prywatności.</a>
-            <button class="modal-submit-btn" type="submit">Wyślij</button> 
-    </label> 
+          
+            <label class="modal-form-policy visually-hidden">
+                <input
+                    type="checkbox"
+                    name="policy"
+                    
+                /> 
+                <svg
+                    class="checked-icon">
+                    <use
+                        href="images/icons.svg#icon-checkbox"
+                    ></use>
+                </svg>
+            </label>
         
+          <!-- <input
+            class="modal-form-policy visually-hidden"
+            id="user-policy"
+            type="checkbox"
+          /> -->
+          <label class="modal-form-policy-text" for="user-policy"
+            >Oświadczam, iż akceptuję
+            <a href="#" class="modal_form-regulations-link">Regulamin</a>
+            i
+            <a href="#" class="modal_form-regulations-link"
+              >Politykę Prywatności.</a
+            >
+            <button class="modal-submit-btn" type="submit">Wyślij</button>
+          </label>
         </form>
       </div>
     </div>
